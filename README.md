@@ -20,23 +20,23 @@ Note: for windows user, use absolute path.
 `pip install -r requirements.txt
 `
 
-#API 
-* "room": "http://localhost:8000/api/room/"
+# API 
+## "room": "http://localhost:8000/api/room/"
 ### Get
 User can get all the rooms in theater 
 ###Post
 Admin can create room with variable in there
-* "movie": "http://localhost:8000/api/movie/"
+## "movie": "http://localhost:8000/api/movie/"
 ### Get 
 User can view all the movies in different show time
 ### Post 
 Admin can create a movie for a given room
-* "tickets": "http://localhost:8000/api/tickets/"
+## "tickets": "http://localhost:8000/api/tickets/"
 ### Get 
 User can view information on a particular show time for tickets to purchase, can query by room_id and by movie_id
 ### Post
 Admin can create ticket sales for a particular day
-* "order": "http://localhost:8000/api/order/"
+## "order": "http://localhost:8000/api/order/"
 ### Post
 User can buy ticket, if there's no available tickets left it will throw error
 
@@ -44,3 +44,4 @@ User can buy ticket, if there's no available tickets left it will throw error
 #Potential improvements
 * User management is implemented, including the authentication and authorization mechanism(for both admin and user) but permission level is not included yet. Given more time, it can be included
 * Docker-compose is created for a more similar-to-produciton level postgres db, a better way to develop and deploy the current solution.
+*  test driven(even know not for all apis due to time constraints)
